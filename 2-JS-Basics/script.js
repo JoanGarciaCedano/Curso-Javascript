@@ -207,7 +207,7 @@ if(johnBMI > markBMI){
 
  /****************************
   * The ternary operator and switch statements
-  */
+ 
 
 var firstName = 'John';
 var age = 16;
@@ -247,4 +247,20 @@ switch(true){
         break;
     default:
         console.log(firstName + ' is a man.');
+}
+ */
+
+ /********************************
+  * Truthy and Falsy values and equality operators
+  */
+
+// falsy values: undefined, null, 0 , '', NaN
+// truthy values: NOT falsy values
+
+var height = 0;
+
+if(height || height === 0){
+    console.log('Variable is defined');
+}else{
+    console.log('Variable has NOT been defined');
 }
