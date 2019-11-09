@@ -525,7 +525,7 @@ Remember: BMI = mass / height^2 = mass / (height * height).
 
 GOOD LUCK :)
 
-  */
+
 
 var john = {
     firstName: 'John',
@@ -557,3 +557,27 @@ if (john.bmi < mark.bmi) {
     console.log('John and Mark\'s BMI are the same');
 }
 
+  */
+
+
+  /*******************************
+   * Loops and iteration
+   */
+
+   // For Loop
+for(var i = 0; i < 10; i++){
+    console.log(i);
+}
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+for(var i = 0; i < john.length; i++){
+    console.log(john[i]);
+}
+
+    // While Loop
+var i = 0;
+while(i < john.length){
+    console.log(john[i]);
+    i++;
+}
