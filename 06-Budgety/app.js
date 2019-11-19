@@ -24,7 +24,7 @@ var budgetController = (function(){
         }
     };
 
-    return {
+    return Object.freeze({
         addItem: function(type, des, val){
             var newItem, ID;
             
@@ -56,7 +56,7 @@ var budgetController = (function(){
         testing: function(){
             console.log(data);
         }
-    };
+    });
 
 })();
 
