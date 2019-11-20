@@ -163,7 +163,7 @@ var controller = (function(budgetCtrl, UICtrl){
             // 4. Crear the fields
             UIController.clearFields();
             //5. Calculate and update budget
-            updateBudget();A
+            updateBudget();
         } 
     };
     
