@@ -204,3 +204,11 @@
 // }
 // new Person('Mike').myFriends6(friends);
 
+/////////////////////////////////////////////////////
+// Lecture: Destructing
+
+
+// ES5
+var john = ['John', 28];
+var name = john[0];
+var age = john[1];
