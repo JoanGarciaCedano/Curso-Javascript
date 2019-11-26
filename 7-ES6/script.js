@@ -205,10 +205,15 @@
 // new Person('Mike').myFriends6(friends);
 
 /////////////////////////////////////////////////////
-// Lecture: Destructing
+// Lecture: Destructuring
 
 
 // ES5
-var john = ['John', 28];
-var name = john[0];
-var age = john[1];
+// var john = ['John', 28];
+// var name = john[0];
+// var age = john[1];
+
+
+// ES6
+const [name, age] = ['John', 26];
+console.log(name, age);
