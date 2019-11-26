@@ -229,3 +229,13 @@ console.log(firstName, lastName);
 const {firstName: a, lastName: b} = obj;
 console.log(a);
 console.log(b);
+
+
+function calcAgeRetirement(year){
+    const age = new Date().getFullYear() - year;
+    return [age, 65 - age];
+}
+
+const [age2, retirement] = calcAgeRetirement(1990);
+console.log(age2);
+console.log(retirement);
