@@ -226,3 +226,6 @@ const obj = {
 const {firstName, lastName} = obj;
 console.log(firstName, lastName);
 
+const {firstName: a, lastName: b} = obj;
+console.log(a);
+console.log(b);
