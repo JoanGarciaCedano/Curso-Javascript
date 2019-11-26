@@ -217,3 +217,12 @@
 // ES6
 const [name, age] = ['John', 26];
 console.log(name, age);
+
+const obj = {
+    firstName: 'John',
+    lastName: 'Smith'
+};
+
+const {firstName, lastName} = obj;
+console.log(firstName, lastName);
+
