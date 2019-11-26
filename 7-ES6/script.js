@@ -236,6 +236,6 @@ function calcAgeRetirement(year){
     return [age, 65 - age];
 }
 
-const [age2a, retirement] = calcAgeRetirement(1990);
+const [age2, retirement] = calcAgeRetirement(1990);
 console.log(age2);
 console.log(retirement);
