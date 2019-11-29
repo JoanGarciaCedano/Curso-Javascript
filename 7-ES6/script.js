@@ -214,28 +214,39 @@
 // var age = john[1];
 
 
-// ES6
-const [name, age] = ['John', 26];
-console.log(name, age);
+// // ES6
+// const [name, age] = ['John', 26];
+// console.log(name, age);
 
-const obj = {
-    firstName: 'John',
-    lastName: 'Smith'
-};
+// const obj = {
+//     firstName: 'John',
+//     lastName: 'Smith'
+// };
 
-const {firstName, lastName} = obj;
-console.log(firstName, lastName);
+// const {firstName, lastName} = obj;
+// console.log(firstName, lastName);
 
-const {firstName: a, lastName: b} = obj;
-console.log(a);
-console.log(b);
+// const {firstName: a, lastName: b} = obj;
+// console.log(a);
+// console.log(b);
 
 
-function calcAgeRetirement(year){
-    const age = new Date().getFullYear() - year;
-    return [age, 65 - age];
-}
+// function calcAgeRetirement(year){
+//     const age = new Date().getFullYear() - year;
+//     return [age, 65 - age];
+// }
 
-const [age2, retirement] = calcAgeRetirement(1990);
-console.log(age2);
-console.log(retirement);
+// const [age2, retirement] = calcAgeRetirement(1990);
+// console.log(age2);
+// console.log(retirement);
+
+/////////////////////////////////////////////////
+// Lecture: Arrays
+
+const boxes = document.querySelectorAll('.box');
+
+//ES5
+var boxesArr5 = Array.prototype.slice.call(boxes);
+boxesArr5.forEach(function(cur){
+    cur.style.backgroundColor = 'dodgerblue';
+});
