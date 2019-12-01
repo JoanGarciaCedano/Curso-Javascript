@@ -331,5 +331,12 @@ function isFullAge5(){
     });
 }
 
-isFullAge5(1990, 1999, 1965);
-isFullAge5(1990, 1999, 1965,2016, 1987);
+// isFullAge5(1990, 1999, 1965);
+// isFullAge5(1990, 1999, 1965,2016, 1987);
+
+// ES6
+function isFullAge6(...years){
+    years.forEach(cur => console.log((2016 - cur) >= 18));
+}
+
+isFullAge6(1990, 1999, 1965, 2016, 1987);
