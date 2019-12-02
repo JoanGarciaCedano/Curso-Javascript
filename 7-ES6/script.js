@@ -378,3 +378,4 @@ function SmithPerson(firstName, yearOfBirth, lastName, nationality){
 }
 
 var john = new SmithPerson('John', 1990);
+var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
