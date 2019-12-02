@@ -471,65 +471,99 @@ isFullAge6(1990, 1999, 1965, 2016, 1987);
 /////////////////////////////////////////////////////7
 // Lecture : Classes and Subclasses
 
-//ES5 
-var Person5 = function(name, yearOfBirth, job){
+// //ES5 
+// var Person5 = function(name, yearOfBirth, job){
+//     this.name = name;
+//     this.yearOfBirth = yearOfBirth;
+//     this.job = job;
+// }
+
+// Person5.prototype.calculateAge = function(){
+//     var age = new Date().getFullYear() - this.yearOfBirth;
+//     console.log(age);
+// }
+
+// var Athlete5 = function(name, yearOfBirth, job, olympicGames, medals){
+//     Person5.call(this, name, yearOfBirth, job);
+//     this.olympicGames = olympicGames;
+//     this.medals = medals;
+// }
+
+// Athlete5.prototype = Object.create(Person5.prototype);
+
+// Athlete5.prototype.wonMedal = function () {
+//     this.medals++;
+//     console.log(this.medals);
+// }
+
+// var johnAthlete5 = new Athlete5('John', 1990, 'swimmer', 3, 10);
+
+// johnAthlete5.calculateAge();
+// johnAthlete5.wonMedal();
+
+// //ES6
+// class Person6{
+//     constructor(name, yearOfBirth, job){
+//         this.name = name;
+//         this.yearOfBirth = yearOfBirth;
+//         this.job = job;
+//     }
+
+//     calculateAge(){
+//         var age = new Date().getFullYear() - this.yearOfBirth;
+//         console.log(age);
+//     }
+
+// }
+
+// class Athlete6 extends Person6{
+//     constructor(name, yearOfBirth, job, olympicGames, medals){
+//         super(name, yearOfBirth, job);
+//         this.olympicGames = olympicGames;
+//         this.medals = medals;
+//     }
+
+//     wonMdeal(){
+//         this.medals++;
+//         console.log(this.medals);
+//     }
+
+// }
+
+// const johnAthlete6 = new Athlete6('John', 1990, 'swimmer', 3, 10);
+// johnAthlete6.wonMdeal();
+// johnAthlete6.calculateAge();
+
+// CODING CHALLENGE 8
+
+/**
+ * Suppose that you're working in a small town administration, and you're in charge of
+ * two elements:
+ * 1. Parks
+ * 2. Streets
+ * 
+ * It's a very small town, so right now there are only 3 parks and 4 streets. All parks
+ * and streets have a name and build year.
+ * 
+ * At an end-of-year meeting, your boss wants a final report with the following:
+ * 1. Tree density of each park in the town
+ * (formula: number of trees/park area)
+ * 2. Average age of each town's park
+ * (formula: sum of all ages/number of parks)
+ * 3. The name of the park that has more than 1000 trees
+ * 4. Total and average length of the town's streets
+ * 5. Size classification of all streets:
+ * tiny/small/normal/big/huge. If the size is unknown, the default is normal
+ * 
+ * All the report data should be printed to the console.
+ * 
+ * HINT: Use some of the ES6 features: classes, subclasses, template strings, default, parameters,
+ * maps, arrow functions, destructuring, etc.
+ */
+
+class Element{
+    constructor(name, buildYear);
     this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
+    this.buildYear = buildYear;
 }
 
-Person5.prototype.calculateAge = function(){
-    var age = new Date().getFullYear() - this.yearOfBirth;
-    console.log(age);
-}
-
-var Athlete5 = function(name, yearOfBirth, job, olympicGames, medals){
-    Person5.call(this, name, yearOfBirth, job);
-    this.olympicGames = olympicGames;
-    this.medals = medals;
-}
-
-Athlete5.prototype = Object.create(Person5.prototype);
-
-Athlete5.prototype.wonMedal = function () {
-    this.medals++;
-    console.log(this.medals);
-}
-
-var johnAthlete5 = new Athlete5('John', 1990, 'swimmer', 3, 10);
-
-johnAthlete5.calculateAge();
-johnAthlete5.wonMedal();
-
-//ES6
-class Person6{
-    constructor(name, yearOfBirth, job){
-        this.name = name;
-        this.yearOfBirth = yearOfBirth;
-        this.job = job;
-    }
-
-    calculateAge(){
-        var age = new Date().getFullYear() - this.yearOfBirth;
-        console.log(age);
-    }
-
-}
-
-class Athlete6 extends Person6{
-    constructor(name, yearOfBirth, job, olympicGames, medals){
-        super(name, yearOfBirth, job);
-        this.olympicGames = olympicGames;
-        this.medals = medals;
-    }
-
-    wonMdeal(){
-        this.medals++;
-        console.log(this.medals);
-    }
-
-}
-
-const johnAthlete6 = new Athlete6('John', 1990, 'swimmer', 3, 10);
-johnAthlete6.wonMdeal();
-johnAthlete6.calculateAge();
