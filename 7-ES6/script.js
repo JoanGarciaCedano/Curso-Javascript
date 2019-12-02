@@ -381,14 +381,14 @@ isFullAge6(1990, 1999, 1965, 2016, 1987);
 // var john = new SmithPerson('John', 1990);
 // var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 
-//ES6
+// //ES6
 
-function SmithPerson(firstName, yearOfBirth, lastName = 'Smith', nationality = 'american'){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.yearOfBirth = yearOfBirth;
-    this.nationality = nationality;
-}
+// function SmithPerson(firstName, yearOfBirth, lastName = 'Smith', nationality = 'american'){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.yearOfBirth = yearOfBirth;
+//     this.nationality = nationality;
+// }
 
-var john = new SmithPerson('John', 1990);
-var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
+// var john = new SmithPerson('John', 1990);
+// var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
