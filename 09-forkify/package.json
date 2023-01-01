@@ -9,7 +9,7 @@
   "author": "Joan García",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "jquery": "^3.4.1"
